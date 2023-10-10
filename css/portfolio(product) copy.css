@@ -1,0 +1,73 @@
+/* product.css */
+.menu-container {
+    margin-top: 145px;
+    padding: 0 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+.menu-item {
+    width: 20%; /* 4개의 항목을 한 줄에 표시하려면 23%로 설정 */
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.menu-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.menu-container::after {
+    content: "";
+    width: 20%;
+}
+
+.navigation {
+    width: 100%;
+    text-align: center;
+    height: 33px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.navigation ul {
+    padding-top: 5px;
+}
+
+.navigation li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 0 0 5px 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navigation a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* 네비게이션 바 항목을 클릭했을때 */
+.navigation a.active {
+    background-color: #333;
+    color: #fff;
+}
+
+.product_title {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 30px;
+    font-weight: 900;
+    border-bottom: 1px solid #333;
+}

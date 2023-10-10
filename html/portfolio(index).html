@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/portfolio(header_footer).css">
+    <link rel="stylesheet" href="../css/portfolio(index).css">
+    <style>
+        /* main_color: #f8f8f8(화이트), #333(블랙) */
+        /* aspect-ratio: 1/0:0.8; x:y*/
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <div class="thick_header">
+        <div class="t_header">
+            <div class="logo">
+                <a href="portfolio(index).html"></a>
+            </div>
+        </div>
+        <div class="b_header">
+            <ul class="header_menu">
+                <li>
+                    <a href="portfolio(product_brand).html">백미당</a>
+                    <ul class="sub_menu">
+                        <li>백미당 소식</li>
+                        <li>백미당 문화</li>
+                        <li>백미당 나눔</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="portfolio(product) copy.html">메뉴안내</a>
+                    <ul class="sub_menu">
+                        <li><a href="#" data-category="coffee">커피</a></li>
+                        <li><a href="#" data-category="ice_cream">백미당 아이스크림</a></li>
+                        <li><a href="#" data-category="topping_dessert">Fresh 토핑 디저트</a></li>
+                        <li><a href="#" data-category="bakery">베이커리</a></li>
+                        <li><a href="#" data-category="soft_shake">Soft Shake</a></li>
+                        <li><a href="#" data-category="organic_milk">유기농우유</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="portfolio(product_store).html">매장안내</a>
+                    <ul class="sub_menu">
+                        <li>서울지역</li>
+                        <li>경기.인천.강원지역</li>
+                        <li>영남.충청.호남지역</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="portfolio(product_craftshop).html">백미당 공방</a>
+                    <ul class="sub_menu">
+                        <li>백미당 공방</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="sns_btn_box">
+                <li>
+                    <a href="https://www.instagram.com/1964baekmidang/" target="_blank">
+                        <img src="../백미당/아이콘/instagram_icon.png" class="instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/Baekmidang/" target="_blank">
+                        <img src="../백미당/아이콘/facebook_icon.png" class="facebook" id="facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/@1964baekmidang/" target="_blank">
+                        <img src="../백미당/아이콘/youtube_icon.png" class="youtube" id="youtube">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- <div class="thin_header">
+        <img src="../백미당/백미당/logo2.png" class="logo2">
+            <ul class="thin_header_menu">
+                <li>백미당</li>
+                <li>메뉴안내</li>
+                <li>매장안내</li>
+                <li>백미당공방</li>
+            </ul>
+            <ul class="sns_btn_box">
+                <li>
+                    <a href="https://www.instagram.com/1964baekmidang/" target="_blank">
+                        <img src="../백미당/instagram_icon.png" class="instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/Baekmidang/" target="_blank">
+                        <img src="../백미당/facebook_icon.png" class="facebook" id="facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/@1964baekmidang/" target="_blank">
+                        <img src="../백미당/youtube_icon.png" class="youtube" id="youtube">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div> -->
+    <div class="main_banner">
+        <div class="sec" id="sec1">
+            <img src="../백미당/백미당/farm.png" class="img1">
+            <img src="../백미당/백미당/bi_chinese-1.png" class="bmd">
+            <div class="bmd_txt">일 백가지만큼이나 다양한 맛을 만들어<br>건강하고 즐거운 식문화를 공유하는 브랜드입니다.</div>
+        </div>
+        <div class="sec" id="sec2">
+            <img src="../백미당/백미당/fromtofarm.jpg" class="img2">
+            <div class="ftf_txt"><p class="title">FROM THE FARM</p>
+                백미당의 모든 원료는 좋은 원료에 대한 고지식함에서 시작됩니다.
+            </div>
+        </div>
+        <div class="sec" id="sec3">
+            <img src="../백미당/백미당/menu_coffee_slider_03_hot_takeout_new.jpg" class="img3">
+            <div class="coffee_txt"><p class="title">ORGANIC BEANS</p>
+                백미당의 유기농 커피빈은 3년 이상 유기 관리된<br>
+                에티오피아 구마르 농장, 콜롬비아산 타타마,<br>
+                인도네시아 SAG농장에서 자라난 유기농 커피 원두만을 사용하며,<br>
+                백미당의 1964 블랜드는 50여명의 Q-grader, Roaster, Barista가<br>
+                오랜 연구와 테스트를 통해 최적의 관능 Balance를 구현하였습니다.
+            </div>
+        </div>
+        <div class="sec" id="sec4">
+            <img src="../백미당/백미당/organic_milk.jpg" class="img4">
+            <div class="milk_txt"><p class="title">ORGANIC MILK</p>
+                무 농약, 무 항생제 활용으로 국내 유기축산물 인증을 받은<br>
+                청정목장을 고집합니다. 백미당은 Non-GMO 씨앗만을 땅에<br>
+                심고 화학비료, 농약 등을 일체 사용하지 않은 환경에서 자란<br>
+                목초를 먹고 자란 젖소의 1A 등급 유기농 우유를 사용합니다.
+            </div>
+        </div>
+        <div class="sec" id="sec5">
+            <img src="../백미당/백미당/pure.jpg" class="img5">
+            <div class="beans_txt"><p class="title">AUTHENTICITY</p>
+                백미당의 모든 메뉴는 순수한 원료와<br>
+                순수한 과정을 통해 만들어집니다.
+            </div>
+        </div>
+        <div class="sec" id="sec6">
+            <img src="../백미당/백미당/heritage.jpg" class="img6">
+            <div class="fabric_txt"><p class="title">MODESTY</p>
+                진실된 가치를 추구하는 백미당 연구원 모두는<br>
+                겸손한 마음가짐을 기본으로<br>
+                전문적인 기량과 독특한 시도를<br>
+                끊임없이 이어가고 있습니다.
+            </div>
+        </div>
+        <div class="sec">
+            <div class="quick"><!-- 퀵메뉴버튼 -->
+                <div class="quick_box q_brand">
+                    <div class="b_pan"></div>
+                    <div class="title q_title">BRAND</div>
+                </div>
+                <div class="quick_box q_menu">
+                    <div class="b_pan"></div>
+                    <div class="title q_title">
+                        <a href="portfolio(product) copy.html">MENU</a>
+                    </div>
+                </div>
+                <div class="quick_box q_store">
+                    <div class="b_pan"></div>
+                    <div class="title q_title">STORE</div>
+                </div>
+            </div>
+            <div class="slide_banner"><!-- 슬라이드배너(이미지9장) -->
+                <div class="item item0"></div>
+                <div class="item item1"></div>
+                <div class="item item2"></div>
+                <div class="item item3"></div>
+                <div class="item item4"></div>
+                <div class="item item5"></div>
+                <div class="item item6"></div>
+                <div class="item item7"></div>
+                <div class="item item8"></div>
+                <input type="button" class="btn_item btn_item_L" value="《">
+                <input type="button" class="btn_item btn_item_R" value="》">
+        
+                <div class="bang_indi">
+                </div>
+            </div>
+        </div>
+        <!-- <ul class="nav_ul">
+            <li><a href="#sec1"></a></li>
+            <li><a href="#sec2"></a></li>
+            <li><a href="#sec3"></a></li>
+            <li><a href="#sec4"></a></li>
+            <li><a href="#sec5"></a></li>
+            <li><a href="#sec6"></a></li>
+        </ul> -->
+    </div>
+</div>
+<script src="../js/portfolio(load_list).js"></script>
+<script src="../js/portfolio(common).js"></script>
+<script src="../js/portfolio(index).js"></script>
+</body>
+</html>

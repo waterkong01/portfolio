@@ -1,0 +1,342 @@
+#wrap {
+    width: 100%;
+    height: 100%;
+    background: palegoldenrod;
+}
+
+/* 헤더 */
+.thick_header {
+    width: 100%;
+    height: 145px;
+    /* background-color: skyblue; */
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+}
+.thin_header {
+    width: 100%;
+    height: 70px;
+    background-color: pink;
+    position: relative;
+}
+.t_header {
+    width: 100%;
+    height: 75px;
+    /* background-color: pink; */
+    position: relative;
+}
+.b_header {
+    width: 100%;
+    height: 70px;
+    /* background-color: palevioletred; */
+    position: relative;
+}
+.header_menu > li {
+    float: left;
+    padding: 0 15px;
+    line-height: 70px;
+    font-size: 20px;
+    font-weight: 800;
+    color: #333;
+}
+/* .logo {
+    width: auto;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+} */
+
+.logo2 {
+    width: auto;
+    height: 40px;
+    position: absolute;
+    top: 15px;
+    left: 30px;
+}
+.header_menu {
+    height: 70px;
+    float: left;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.thin_header_menu {
+    position: absolute;
+    left: 80px;
+}
+.sns_btn_box {
+    width: auto;
+    height: 30px;
+    /* background-color: pink; */
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+.sns_btn_box > li {
+    height: 30px;
+    float: left;
+}
+.instagram, .facebook, .youtube {
+    width: 30px;
+    height: 30px;
+    padding: 0 20px;
+}
+.nav_ul > li {
+    width: 10px;
+    height: 10px;
+    border: 1px solid;
+    border-radius: 50%;
+    margin: 20px;
+}
+.main_banner {
+    margin-top: 145px;
+}
+.nav_active { 
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+}
+.main_active { margin-top: 70px;}
+
+
+
+/* 메인 섹션 */
+.sec {
+    width: 100%;
+    height: calc(100vh - 145px);
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+    /* top: 145px; */
+}
+.img1 {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.2;
+}
+.img2, .img3, .img4, .img5, .img6 {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#sec1, #sec2, #sec3, #sec4, #sec5, #sec6 {background: #fff;}
+
+
+
+/* 메인 텍스트 */
+.bmd { /* 메인 첫번째 - 백미당 */
+    width: 15vw;
+    height: auto;
+    position: absolute;
+    top: 100px;
+    left: 15%;
+}
+.bmd_txt {
+    width:365px;
+    height: auto;
+    line-height: 30px;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+}
+.title { /* 메인 나머지 제목 */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    z-index: 99999;
+}
+.ftf_txt { /* from the farm */
+    width: 100%;
+    height: 300px;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: calc(50% + 100px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.coffee_txt { /* organic beans */
+    line-height: 30px;
+    position: absolute;
+    top: 100px;
+    left: 350px;
+}
+.milk_txt { /* organic milk */
+    line-height: 30px;
+    text-align: right;
+    position: absolute;
+    top: 100px;
+    right: 350px;
+    z-index: 99999;
+}
+.beans_txt { /* authenticity */
+    color: #fff;
+    line-height: 30px;
+    position: absolute;
+    top: 100px;
+    left: 350px;
+}
+.fabric_txt {
+    color: #fff;
+    line-height: 30px;
+    position: absolute;
+    top: 100px;
+    left: 350px;
+}
+
+
+
+/* 퀵메뉴버튼 */
+.quick {
+    width: 100%;
+    height: calc(100% - 420px);
+    /* background-color: skyblue; */
+    display: flex;
+}
+.quick_box {
+    width: calc(100% / 3);
+    height: 100%;
+    /* border: 1px solid; */
+    position: relative;
+}
+.q_brand {
+    background: url(../백미당/quick_menu/brand1-2.jpg) no-repeat center / cover;
+}
+.q_menu {
+    background: url(../백미당/quick_menu/menu1-2.jpg) no-repeat center / cover;
+}
+.q_store {
+    background: url(../백미당/quick_menu/store2.jpg) no-repeat center / cover;
+}
+.q_title { /* 메인 나머지 제목 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 50px;
+}
+.b_pan {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background: #333;
+}
+.quick_box:hover .b_pan {
+    background: #fff;
+}
+.quick_box:hover .q_title {
+    color: #333;
+}
+
+
+
+/* 슬라이드 배너 */
+.slide_banner {
+    width: 100%;
+    height: 420px;
+    margin: 0 auto;
+    /* background-color: pink; */
+    position: relative;
+    /* border: 1px solid #000; */
+    overflow: hidden;
+}
+.item {
+    width: calc(100% / 5);
+    height: 420px;
+    font-size: 100px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    box-sizing: border-box;
+}
+.item0 {
+    left: calc(100% / 5 * 0);
+    background: url(../백미당/메인/1.jpg) no-repeat center / cover; 
+}
+.item1 { 
+    left: calc(100% / 5 * 1);
+    background: url(../백미당/메인/2.jpg) no-repeat center / cover;
+}
+.item2 {
+    left: calc(100% / 5 * 2);
+    background: url(../백미당/메인/4.jpg) no-repeat center / cover;
+}
+.item3 {
+    left: calc(100% / 5 * 3);
+    background: url(../백미당/메인/5.jpg) no-repeat center / cover;
+}
+.item4 {
+    left: calc(100% / 5 * 4);
+    background: url(../백미당/메인/6-3.jpg) no-repeat center / cover;
+}
+.item5 {
+    left: calc(100% / 5 * 5);
+    background: url(../백미당/메인/7-2.jpg) no-repeat center / cover;
+}
+.item6 {
+    left: calc(100% / 5 * 6);
+    background: url(../백미당/메인/8-2.jpg) no-repeat center / cover;
+}
+.item7 {
+    left: calc(100% / 5 * 7);
+    background: url(../백미당/메인/9-2.jpg) no-repeat center / cover;
+}
+.item8 {
+    left: calc(100% / 5 * 8);
+    background: url(../백미당/메인/10-2.jpg) no-repeat center / cover;
+}
+.s_b_img {
+    width: 100%;
+    height: 100%;
+}
+.btn_item {
+    width: 50px;
+    height: 100%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 0;
+}
+.btn_item_L { left: 0;}
+.btn_item_R { right: 0;}
+
+
+
+/* 인디케이터 */
+.bang_indi {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+.bang_circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+}
+.bang_circle_active {
+    background: gray;
+}
+
+
+
+
+/* 226, 233, 245파일 */
